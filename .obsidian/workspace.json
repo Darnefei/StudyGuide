@@ -11,8 +11,24 @@
             "id": "5f0e88a9075b7387",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Java/Advanced/Functional Programming.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "386df87c483a4558",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java/Java.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Java/Advanced/Functional Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Java/Advanced/Functional Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +144,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Java/Advanced/Functional Programming.md"
+              }
             }
           }
         ]
@@ -149,9 +169,15 @@
   },
   "active": "5f0e88a9075b7387",
   "lastOpenFiles": [
-    "Untitled.canvas",
-    "README.md",
     "Java/Java.md",
+    "Java/Advanced/Functional Programming.md",
+    "DevOps/k8s/k8s.md",
+    "README.md",
+    "Java/Advanced/Dependency Injection.md",
+    "Java/Advanced/Advanced.md",
+    "Java/Advanced/Threads.md",
+    "Java/Advanced/JVM JDK.md",
+    "Untitled.canvas",
     "Java/Basics/IDE.md",
     "Java",
     "Frameworks/Spring/Spring Boot/Database/SQL & NOSQL/Transactions.md",
@@ -167,15 +193,10 @@
     "Frameworks/Spring/Spring Boot/Database/Spring Data/Spring Data.md",
     "Frameworks/Spring/Spring Boot/Database/SQL & NOSQL/SQL & NOSQL.md",
     "Frameworks/Spring/Core/Configuration.md",
-    "DevOps/k8s/k8s.md",
     "DevOps/Cloud/Google Cloud.md",
     "DevOps/Cloud/AWS.md",
     "DevOps/Cloud/Cloud.md",
     "DevOps/DevOps.md",
-    "Frameworks/Spring/Spring Boot/MicroServices/Spring Cloud/Security.md",
-    "Frameworks/Spring/Spring Boot/MicroServices/Message Queues/RabbitMQ.md",
-    "Frameworks/Spring/Spring Boot/MicroServices/Message Queues/Kafka.md",
-    "Frameworks/Spring/Spring Boot/MicroServices/Message Queues/SQS.md",
     "DevOps/Cloud",
     "DevOps",
     "Frameworks/Spring/Spring Boot/MicroServices/Message Queues",

@@ -7,6 +7,7 @@ Install following plugins to use it with full funtionallity
 - Execute Code
 - Obsidian Git
 - Tag Folder
+- plantuml
 
 # Goal of this project
 
