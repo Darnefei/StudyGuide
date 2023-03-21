@@ -7,7 +7,7 @@
 [[Git]]
 [[Databases]]
 [[Build Tools]]
-[[Logging & Tracing]] 
+[[Logging Tracing]] 
 
 ## Starting information:
 

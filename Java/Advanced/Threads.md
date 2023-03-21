@@ -1,7 +1,14 @@
 
-## General
+---
+title: Threads
+tag: Advanced
+publish: false
+creation date: 2023-03-09 09:46
+modification date: Thursday 9th March 2023 14:47:29
+---
 
-### code example
+## Definition:
+## Example:
 
 
 ```java 
@@ -68,6 +75,8 @@ public class Launcher {
 ```
 
 
-## Links and tags
-
-[[Advanced]]
+## Syntax:
+## Link:
+---
+Link : [[Advanced]]
+Tag: #Advanced #Threads

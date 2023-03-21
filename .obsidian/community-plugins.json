@@ -1,8 +1,9 @@
 [
   "execute-code",
-  "folder-note-core",
-  "alx-folder-note",
   "obsidian-tagfolder",
   "obsidian-git",
-  "obsidian-plantuml"
+  "obsidian-plantuml",
+  "alx-folder-note",
+  "folder-note-core",
+  "templater-obsidian"
 ]

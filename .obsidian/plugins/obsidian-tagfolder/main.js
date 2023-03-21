@@ -57,7 +57,8 @@ var DEFAULT_SETTINGS = {
   doNotSimplifyTags: false,
   overrideTagClicking: false,
   useMultiPaneList: false,
-  archiveTags: ""
+  archiveTags: "",
+  disableNarrowingDown: false
 };
 var VIEW_TYPE_SCROLL = "tagfolder-view-scroll";
 var EPOCH_MINUTE = 60;
@@ -2210,6 +2211,9 @@ function instance3($$self, $$props, $$invalidate) {
             ...ancestorToLongestTag(ancestorToTags($$invalidate(29, _a = parentTags.filter((e) => e)) !== null && _a !== void 0 ? _a : []))
           ];
           let filteredTags = [...tempTags];
+          if (entry.extraTags) {
+            filteredTags = [...filteredTags, ...entry.extraTags];
+          }
           for (const removeTag of removeTags) {
             const part = removeTag.split("/");
             for (const piece of part)
@@ -3447,6 +3451,7 @@ var expandTree = async (node, reduceNestedParent) => {
     }
     const newLeaf = {
       tag,
+      extraTags: node.extraTags,
       children: newChildren,
       ancestors: [...ancestor, tag],
       descendants: null,
@@ -3523,6 +3528,7 @@ var splitTag = async (entry, reduceNestedParent, root) => {
         if (!parent) {
           const newGrandchild = {
             tag: tagCdr,
+            extraTags: tempEntry.extraTags,
             children: [...tempChildren],
             ancestors: [
               ...newAncestorsBase,
@@ -3536,6 +3542,7 @@ var splitTag = async (entry, reduceNestedParent, root) => {
           };
           const newChild = {
             tag: tagCar,
+            extraTags: tempEntry.extraTags,
             children: [newGrandchild],
             ancestors: [...newAncestorsBase, tagCar],
             descendants: null,
@@ -3561,6 +3568,7 @@ var splitTag = async (entry, reduceNestedParent, root) => {
           } else {
             const x = {
               tag: tagCdr,
+              extraTags: tempEntry.extraTags,
               children: [...tempChildren],
               ancestors: [
                 ...newAncestorsBase,
@@ -3829,6 +3837,15 @@ var TagFolderPlugin = class extends import_obsidian6.Plugin {
       name: "Show Tag Folder",
       callback: () => {
         this.activateView();
+      }
+    });
+    this.addCommand({
+      id: "tagfolder-create-similar",
+      name: "Create a new note with the same tags",
+      editorCallback: async (editor, view) => {
+        const tags = (0, import_obsidian6.getAllTags)(this.app.metadataCache.getFileCache(view.file));
+        const ww = await this.app.fileManager.createAndOpenMarkdownFile();
+        await this.app.vault.append(ww, tags.join(" "));
       }
     });
     this.metadataCacheChanged = this.metadataCacheChanged.bind(this);
@@ -4106,15 +4123,31 @@ var TagFolderPlugin = class extends import_obsidian6.Plugin {
       allTags2 = allTags2.filter(
         (tag) => !ignoreTags.contains(tag.toLocaleLowerCase())
       );
-      items.push({
-        tags: allTags2,
-        path: fileCache.file.path,
-        displayName: this.getDisplayName(fileCache.file),
-        ancestors: [],
-        mtime: fileCache.file.stat.mtime,
-        ctime: fileCache.file.stat.ctime,
-        filename: fileCache.file.basename
-      });
+      if (this.settings.disableNarrowingDown) {
+        for (const tags of allTags2) {
+          items.push({
+            tags: [tags],
+            extraTags: allTags2.filter((e) => e != tags),
+            path: fileCache.file.path,
+            displayName: this.getDisplayName(fileCache.file),
+            ancestors: [],
+            mtime: fileCache.file.stat.mtime,
+            ctime: fileCache.file.stat.ctime,
+            filename: fileCache.file.basename
+          });
+        }
+      } else {
+        items.push({
+          tags: allTags2,
+          extraTags: [],
+          path: fileCache.file.path,
+          displayName: this.getDisplayName(fileCache.file),
+          ancestors: [],
+          mtime: fileCache.file.stat.mtime,
+          ctime: fileCache.file.stat.ctime,
+          filename: fileCache.file.basename
+        });
+      }
     }
     return items;
   }
@@ -4123,6 +4156,7 @@ var TagFolderPlugin = class extends import_obsidian6.Plugin {
     const archivedNotes = archiveTags.map((archiveTag) => [archiveTag, items.filter((item) => item.tags.some((tag) => tag.toLocaleLowerCase() == archiveTag))]);
     const root = {
       tag: "root",
+      extraTags: [],
       children: [...items.filter((e) => e.tags.every((tag) => !archiveTags.contains(tag.toLocaleLowerCase())))],
       ancestors: ["root"],
       descendants: null,
@@ -4133,6 +4167,7 @@ var TagFolderPlugin = class extends import_obsidian6.Plugin {
     for (const [archiveTag, items2] of archivedNotes) {
       root.children.push(
         {
+          extraTags: [],
           tag: archiveTag,
           children: items2,
           ancestors: ["root", archiveTag],
@@ -4453,6 +4488,14 @@ var TagFolderSettingTab = class extends import_obsidian6.PluginSettingTab {
         if (this.plugin.settings.useTagInfo) {
           await this.plugin.loadTagInfo();
         }
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian6.Setting(containerEl).setName("Disable narrowing down").setDesc(
+      "When this feature is enabled, relevant tags will be shown with the title instead of making a sub-structure."
+    ).addToggle((toggle) => {
+      toggle.setValue(this.plugin.settings.disableNarrowingDown).onChange(async (value) => {
+        this.plugin.settings.disableNarrowingDown = value;
         await this.plugin.saveSettings();
       });
     });

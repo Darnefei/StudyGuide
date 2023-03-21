@@ -8,27 +8,32 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5f0e88a9075b7387",
+            "id": "0401a64032265132",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Advanced/Functional Programming.md",
+                "file": "Frameworks/Frameworks.md",
                 "mode": "source",
+                "backlinks": false,
                 "source": false
               }
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "4fa0724c26b61cc6",
+        "type": "tabs",
+        "children": [
           {
-            "id": "386df87c483a4558",
+            "id": "0ef8e587edae9805",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java/Java.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {},
+              "pinned": true
             }
           }
         ]
@@ -60,7 +65,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Core",
+                "query": "tag:#01JavaBasics",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,14 +79,6 @@
             "type": "leaf",
             "state": {
               "type": "starred",
-              "state": {}
-            }
-          },
-          {
-            "id": "235bd08ca569f4b6",
-            "type": "leaf",
-            "state": {
-              "type": "tagfolder-view",
               "state": {}
             }
           }
@@ -105,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/Advanced/Functional Programming.md",
+                "file": "Frameworks/Frameworks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/Advanced/Functional Programming.md",
+                "file": "Frameworks/Frameworks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/Advanced/Functional Programming.md"
+                "file": "Frameworks/Frameworks.md"
               }
             }
           }
@@ -162,51 +159,52 @@
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false
+      "workspaces:Manage workspace layouts": false,
+      "templater-obsidian:Templater": false,
+      "templates:Insert template": false
     }
   },
-  "active": "5f0e88a9075b7387",
+  "active": "0401a64032265132",
   "lastOpenFiles": [
-    "Java/Java.md",
-    "Java/Advanced/Functional Programming.md",
-    "DevOps/k8s/k8s.md",
+    "Frameworks/Quarkus.md",
+    "Java/Logging Tracing/Logging Tracing.md",
+    "Java/Testing/Testing.md",
+    "Templates/Templates.md",
     "README.md",
-    "Java/Advanced/Dependency Injection.md",
-    "Java/Advanced/Advanced.md",
-    "Java/Advanced/Threads.md",
-    "Java/Advanced/JVM JDK.md",
-    "Untitled.canvas",
-    "Java/Basics/IDE.md",
-    "Java",
-    "Frameworks/Spring/Spring Boot/Database/SQL & NOSQL/Transactions.md",
-    "Frameworks/Spring/Spring Boot/Database/Spring Data/MongoDB.md",
-    "Frameworks/Spring/Spring Boot/Database/Database.md",
-    "Frameworks/Spring/Spring Boot/Database/Database Design.md",
-    "Frameworks/Spring/Spring Boot/Database/SQL & NOSQL/Queries.md",
-    "Frameworks/Spring/Spring Boot/Database/SQL & NOSQL/Locking.md",
-    "Frameworks/Spring/Spring Boot/Database/SQL & NOSQL/Joins.md",
-    "Frameworks/Spring/Spring Boot/Database/SQL & NOSQL/Indexes.md",
-    "Frameworks/Spring/Spring Boot/Database/Spring Data/JPA.md",
-    "Frameworks/Spring/Spring Boot/Database/Spring Data/JDBCTemplate.md",
-    "Frameworks/Spring/Spring Boot/Database/Spring Data/Spring Data.md",
-    "Frameworks/Spring/Spring Boot/Database/SQL & NOSQL/SQL & NOSQL.md",
-    "Frameworks/Spring/Core/Configuration.md",
     "DevOps/Cloud/Google Cloud.md",
+    "DevOps/Cloud/Azure.md",
     "DevOps/Cloud/AWS.md",
+    "DevOps/k8s/k8s.md",
+    "DevOps/Docker/Docker.md",
     "DevOps/Cloud/Cloud.md",
     "DevOps/DevOps.md",
+    "Frameworks/Frameworks.md",
+    "Frameworks/Spring/Spring.md",
+    "Frameworks/Spring/Core/Core.md",
+    "Frameworks/Spring/Core/MVC/MVC.md",
+    "Frameworks/Spring/Core/MVC/HTTP.md",
+    "Frameworks/Spring/Core/MVC/Rest.md",
+    "Frameworks/Spring/Core/MVC/Web Server.md",
+    "Frameworks/Spring/Core/Annotations.md",
+    "Frameworks/Spring/Core/Configuration.md",
+    "Frameworks/Spring/Core/Dependencie Injection.md",
+    "Frameworks/Spring/Core/Scheduling.md",
+    "Frameworks/Spring/Security/Security.md",
+    "Frameworks/Spring/Security/Authentication & Authorization.md",
+    "Frameworks/Spring/Security/Basic Auth.md",
+    "Templates/Scripts/link_splitter.js",
+    "Templates/Scripts/link_splitter",
+    "Untitled.canvas",
+    "Templates/Scripts/tag_splitter.js",
+    "Templates/Scripts/TagCreator.js",
+    "Templates/Scripts",
+    "Templates",
+    "tsting",
+    "Templates",
+    "Java",
     "DevOps/Cloud",
-    "DevOps",
-    "Frameworks/Spring/Spring Boot/MicroServices/Message Queues",
-    "DevOps/k8s",
-    "DevOps/Docker",
-    "Frameworks/Spring/Spring Boot/MicroServices/Spring Cloud",
-    "Frameworks/Spring/Spring Boot/Database/Spring Data",
-    "Frameworks/Spring/Spring Boot/Database/SQL & NOSQL",
     "Untitled 1.canvas",
-    "Frameworks/Spring/Spring Boot/Database",
     "Advanced/Untitled.canvas"
   ]
 }

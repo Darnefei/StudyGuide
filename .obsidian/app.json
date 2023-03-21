@@ -6,5 +6,6 @@
   "spellcheck": true,
   "spellcheckLanguages": [
     "en"
-  ]
+  ],
+  "newFileLocation": "current"
 }

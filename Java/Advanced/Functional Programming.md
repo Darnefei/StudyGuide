@@ -1,3 +1,12 @@
+---
+title: Functional Programming
+tag: Advanced
+publish: false
+creation date: 2023-03-09 09:53
+modification date: Tuesday 21st March 2023 13:46:19
+---
+
+
 ## Definition:
 
 Specify what you want instead of dealing with the state of object.
@@ -80,6 +89,7 @@ private static void print(List<Animal> animals, CheckTrait checker){
 
 ## Syntax:
 ---
+> [!info]
 >**_Note_**:
 >Lambdas work with interfaces that have exatcly ONE abstract method!
 
@@ -347,5 +357,5 @@ Obj<PRIMTIV>Consumer<T>, method accept(T, <PRIMTIV>)
 
 
 ## Links:
-
-[[Advanced]]
+Link : [[Advanced]]
+Tag: #Advanced #Functional #Programming #FunctionalProgramming
