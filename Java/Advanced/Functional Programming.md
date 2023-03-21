@@ -349,12 +349,14 @@ class StartPoint {
 
 > Interfaces to swap / map between primitives:
 
-<PRIMITIV> is for Double / Int / Long
-To<PRIMITV>Function<T>, method: applyAS<PRIMITIV>(T)
-To<PRIMITIV>BiFunction<T, U>, method applyAs<PRIMITIV>(T, U)
-<PRIMTIV>To<PRIMITIV>Function, method applyAs<PRIMTIV>(<PRIMTIV>)
-Obj<PRIMTIV>Consumer<T>, method accept(T, <PRIMTIV>)
+_TYPE_ is for Double / Int / Long
 
+| Function | method |
+| ---------| ----------- |
+| To_TYPE_Function\<T>, | applyAS_TYPE_(T) |
+|To_TYPE_BiFunction\<T, U> | method applyAs_TYPE_(T, U) |
+| TYPE_To_TYPE_Function | method applyAs_TYPE_(_TYPE_) |
+| Obj_TYPE_Consumer\<T> | method accept(T, _TYPE_) |
 
 ## Links:
 Link : [[Advanced]]

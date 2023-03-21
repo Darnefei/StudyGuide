@@ -4,36 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "5c9ff1db46b528a9",
+        "id": "0c0f70a6931a20e2",
         "type": "tabs",
         "children": [
           {
-            "id": "0401a64032265132",
+            "id": "380e48b127efc53f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Frameworks/Frameworks.md",
+                "file": "Java/Advanced/Functional Programming.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
-            }
-          }
-        ]
-      },
-      {
-        "id": "4fa0724c26b61cc6",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0ef8e587edae9805",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "graph",
-              "state": {},
-              "pinned": true
             }
           }
         ]
@@ -65,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#01JavaBasics",
+                "query": "tag:#Join",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frameworks/Frameworks.md",
+                "file": "Java/Advanced/Functional Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Frameworks/Frameworks.md",
+                "file": "Java/Advanced/Functional Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Frameworks/Frameworks.md"
+                "file": "Java/Advanced/Functional Programming.md"
               }
             }
           }
@@ -165,12 +149,22 @@
       "templates:Insert template": false
     }
   },
-  "active": "0401a64032265132",
+  "active": "380e48b127efc53f",
   "lastOpenFiles": [
+    "Templates/Templates.md",
     "Frameworks/Quarkus.md",
+    "Frameworks/Spring/Spring.md",
+    "Frameworks/Frameworks.md",
+    "Frameworks/Spring/Spring Boot/Testing/Testing Services.md",
+    "DevOps/DevOps.md",
+    "Java/Basics/Java Basics.md",
+    "Java/Basics/IDE.md",
+    "Java/Basics/Basics.md",
+    "Java/Advanced/Advanced.md",
+    "Java/Build Tools/Build Tools.md",
+    "Java/Java.md",
     "Java/Logging Tracing/Logging Tracing.md",
     "Java/Testing/Testing.md",
-    "Templates/Templates.md",
     "README.md",
     "DevOps/Cloud/Google Cloud.md",
     "DevOps/Cloud/Azure.md",
@@ -178,21 +172,11 @@
     "DevOps/k8s/k8s.md",
     "DevOps/Docker/Docker.md",
     "DevOps/Cloud/Cloud.md",
-    "DevOps/DevOps.md",
-    "Frameworks/Frameworks.md",
-    "Frameworks/Spring/Spring.md",
     "Frameworks/Spring/Core/Core.md",
     "Frameworks/Spring/Core/MVC/MVC.md",
     "Frameworks/Spring/Core/MVC/HTTP.md",
     "Frameworks/Spring/Core/MVC/Rest.md",
     "Frameworks/Spring/Core/MVC/Web Server.md",
-    "Frameworks/Spring/Core/Annotations.md",
-    "Frameworks/Spring/Core/Configuration.md",
-    "Frameworks/Spring/Core/Dependencie Injection.md",
-    "Frameworks/Spring/Core/Scheduling.md",
-    "Frameworks/Spring/Security/Security.md",
-    "Frameworks/Spring/Security/Authentication & Authorization.md",
-    "Frameworks/Spring/Security/Basic Auth.md",
     "Templates/Scripts/link_splitter.js",
     "Templates/Scripts/link_splitter",
     "Untitled.canvas",
